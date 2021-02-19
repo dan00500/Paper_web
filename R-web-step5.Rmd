@@ -1,7 +1,8 @@
 ---
 title: ''
 output: html_document
-  
+bibliography: biblio_example.bib
+csl: apa-6th-edition.csl
 ---
 
 <br> 
@@ -143,20 +144,18 @@ plot1 + labs(title = "Arms to keep authoritarianism?",
 
 
 ```{r}
-#devtools::install_github("crsh/citr")
+devtools::install_github("crsh/citr")
 ```
 
 Finally, get a zotero account and download the app. In your local zotero create a folder (collection) biblio_example. Add this (paper)[https://science.sciencemag.org/content/103/2684/677].
 
 Download the folder in the folder you are saving this notebook. You will see  file **biblio_example.bib**. Add this to the YAML header:
 
-bibliography: biblio_example.bib
 
-csl: apa-6th-edition.csl
 
 Restart RStudio. 
 
-After this words insert a citation in parenthesis    or without them   .
+After this words insert a citation in parenthesis [@stevens_theory_1946] or without them  @stevens_theory_1946.
 
 You can get more styles [here](https://github.com/citation-style-language/styles).
 
